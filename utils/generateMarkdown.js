@@ -14,48 +14,67 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `
   
-  # ${data.title}
+  # **${data.title}**
 
   </br>
   <p align="center">
-    <img src="https://img.shields.io/github/languages/count/${data.authorGithub}/${data.repoName}?style=for-the-badge"  />
-    <img src="https://img.shields.io/github/languages/top/${data.authorGithub}/${data.repoName}?style=for-the-badge"  />
-    <img src="https://img.shields.io/github/repo-size/${data.authorGithub}/${data.repoName}?style=for-the-badge"  />   
-    <img src="https://img.shields.io/tokei/lines/github/${data.authorGithub}/${data.repoName}?style=for-the-badge"  />
-    <img src="https://img.shields.io/github/package-json/dependency-version/${data.authorGithub}/${data.repoName}/inquirer?style=for-the-badge"/>
+    <img src="https://img.shields.io/github/languages/count/${data.github}/${
+    data.repo
+  }?style=for-the-badge"  />
+    <img src="https://img.shields.io/github/languages/top/${data.github}/${data.repo}?style=for-the-badge"  />
+    <img src="https://img.shields.io/github/repo-size/${data.github}/${data.repo}?style=for-the-badge"  />   
+    <img src="https://img.shields.io/tokei/lines/github/${data.github}/${data.repo}?style=for-the-badge"  />
+    <img src="https://img.shields.io/github/package-json/dependency-version/${data.github}/${
+    data.repo
+  }/inquirer?style=for-the-badge"/>
+    <img src="https://img.shields.io/github/last-commit/${data.github}/${data.repo}?style=for-the-badge" />  
         
   </p>
 
-  ## Description 
+ ## **Description**
   
   ${data.description}
 
- ## Table of Contents
+ ## **Table of Contents**
     
   * [Installation](#installation)
   * [Tests](#test)
   * [License](#license)
   * [Author](#author)
+  * [Questions](#questions)
 
- ## Installation 
+ ## **Installation** 
 
- ### To install necessary dependencies, run the following command:
+ To install necessary dependencies, run the following command:
  > ${data.installation}
 
- ## Tests
+ ## **Tests**
  
- ### To run tests, run the  following command:
+ To run tests, run the  following command:
  > ${data.tests}
 
- ## License 
- ${data.license}
+ ## **Usage**
 
- ## Author 
+ ${data.usage}
+
+ ## **License**
+
+ This project is licensed under ${data.license} 
+ 
+ ![Github license](https://img.shields.io/badge/license-${encodeURI(data.license)}-green.svg)
+ 
+
+ ## **Author**
 
  - ${data.author}
  - Email: ${data.email}
  - GitHub: [${data.github}](https://www.github.com/${data.github})
  
+ ## **Questions**
+
+ If you have any questions about the repo, please open an issue at [${data.github}](https://www.github.com/${
+    data.github
+  }/${data.repo}) or contact me at ${data.email} for more information. 
 `;
 }
 

@@ -27,6 +27,11 @@ const questions = [
   },
   {
     type: "input",
+    name: "repo",
+    message: "What is the name of your GitHub repository?",
+  },
+  {
+    type: "input",
     name: "description",
     message: "Please write a short description of your project?",
   },
@@ -42,21 +47,30 @@ const questions = [
     choices: [
       {
         name: "None",
-        value: 0,
+        value: "a free license",
+      },
+      {
+        name: "MIT",
+        value: "MIT",
       },
       {
         name: "APACHE 2.0",
-        value: 1,
+        value: "APACHE 2.0",
       },
       {
         name: "GPL 3.0",
-        value: 2,
+        value: "GPL 3.0",
       },
       {
         name: "BSD 3",
-        value: 3,
+        value: "BSD 3",
       },
     ],
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "What does the user need to know about using the repo?",
   },
   {
     type: "input",

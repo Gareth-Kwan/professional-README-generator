@@ -4,9 +4,9 @@ This challenge encourages us to utilize the knowledge we learned about Node JS t
 
 # GitHub
 
-[GitHub Repository](https://github.com/Gareth0201/professional-README-generator)
+[GitHub Repository](https://github.com/Gareth-Kwan/professional-README-generator)
 
-[Deployed GitHub Application](https://gareth0201.github.io/professional-README-generator/)
+[Link to video demo](https://drive.google.com/file/d/1abenLGjyQ4KnLQkMoQdD8BZNDmPCekyy/view)
 
 # Screenshots
 
